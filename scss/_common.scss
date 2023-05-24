@@ -1,0 +1,124 @@
+@import './color';
+@import './fonts';
+
+
+*,
+*::after,
+*::before,
+*:focus,
+*:active {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+*::selection{
+    background: #2A2A2A;
+    color: #fff;
+}
+
+body{
+    font-family: 'Gordita Regular';
+    background:$bgColorLight;
+    overflow-x: hidden;
+}
+
+a,
+a:hover,
+a::after,
+a::before,
+a:link,
+a:focus{
+
+    text-decoration: none;
+}
+
+
+ul, ol , li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.center-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-dropdown{
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    z-index: 9999;
+}
+
+.mb-35{
+    margin-bottom: 35px !important;
+}
+
+.mb-130{
+    margin-bottom: 130px !important;
+}
+
+.mt-90{margin-top: 90px !important;}
+.mt-130{
+    margin-top: 130px !important;
+}
+
+
+.btn, .btn:focus, .btn:link, .btn:hover{
+    padding: 0;
+    margin: 0;
+    line-height: 44px;
+    font-size: 17px;
+    font-family: $gorditaMedium;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    color: $blackColor;
+    border:  none ;
+    display: inline-block;
+}
+
+.heading{
+    font-family: $recoletaRegular;
+    color: $blackColor;
+    font-size: 72px;
+    line-height: 84px;
+}
+
+.red-text{
+    color: $redColor;
+    font-family: $recoletaRegular;
+    position: relative;
+    display: inline-block;
+
+    &::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        background: $redColor;
+        left: 0;
+        right: 0;
+        bottom: 2px;
+        
+    }
+}
+
+.peragraph{
+    font-size: 24px;
+    line-height: 41px;
+    color: $blackColor;
+}
+
+.card-title{
+    font-family: $gorditaMedium;
+    color: $blackColor;
+}
+
+
+
+
